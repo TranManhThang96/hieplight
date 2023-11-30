@@ -50,6 +50,27 @@ $link2 = get_field('link_dich_vu_so_2');
 $title3 = get_field('tieu_de_3');
 $image3 = get_field('anh_dich_vu_so_3');
 $link3 = get_field('link_dich_vu_so_3');
+
+$section_title = get_field('title');
+$section_description = get_field('description');
+
+$section_title1 = get_field('title1');
+$section_image1 = get_field('image1');
+$section_link1 = get_field('link1');
+
+$section_title2 = get_field('title2');
+$section_image2 = get_field('image2');
+$section_link2 = get_field('link2');
+
+
+$section_title3 = get_field('title3');
+$section_image3 = get_field('image3');
+$section_link3 = get_field('link3');
+
+
+$section_title4 = get_field('title4');
+$section_image4 = get_field('image4');
+$section_link4 = get_field('link4');
 ?>
 <section class="comonSection">
   <div class="container">
@@ -58,7 +79,7 @@ $link3 = get_field('link_dich_vu_so_3');
         <div class="singleCats">
           <img src="<?php echo $image1 ?>" alt="<?php echo $title1 ?>" />
           <div class="catContent poppins">
-            <a href="<?php echo '/hieplight/'.$link1 ?>"><?php echo $title1 ?></a>
+            <a href="<?php echo '/hieplight/' . $link1 ?>"><?php echo $title1 ?></a>
           </div>
           <div class="hoverEffect"></div>
         </div>
@@ -68,7 +89,7 @@ $link3 = get_field('link_dich_vu_so_3');
         <div class="singleCats">
           <img src="<?php echo $image2 ?>" alt="<?php echo $title2 ?>" />
           <div class="catContent poppins">
-            <a href="<?php echo '/hieplight/'.$link2 ?>"><?php echo $title2 ?></a>
+            <a href="<?php echo '/hieplight/' . $link2 ?>"><?php echo $title2 ?></a>
           </div>
           <div class="hoverEffect"></div>
         </div>
@@ -79,9 +100,61 @@ $link3 = get_field('link_dich_vu_so_3');
         <div class="singleCats">
           <img src="<?php echo $image3 ?>" alt="<?php echo $title3 ?>" />
           <div class="catContent poppins">
-            <a href="<?php echo '/hieplight/'.$link3 ?>"><?php echo $title3 ?></a>
+            <a href="<?php echo '/hieplight/' . $link3 ?>"><?php echo $title3 ?></a>
           </div>
           <div class="hoverEffect"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="comonSection noPaddingTop">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="normalHr"></div>
+        <div class="sectionTitle text-center">
+          <h2 class="poppins"><?php echo $section_title ?></h2>
+          <div class="titleBars"></div>
+          <p>
+            <?php echo $section_description ?>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 paddingRight5px">
+        <div class="singleFeatured wow fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms">
+          <img src="<?php echo $section_image1 ?>" alt />
+          <div class="feaContent poppins">
+            <h4><?php echo $section_title1 ?></h4>
+            <a href="" <?php echo '/hieplight/' . $section_link1 ?>">Xem thêm<i class="flaticon-arrows-3"></i></a>
+          </div>
+        </div>
+        <div class="singleFeatured wow fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms">
+          <img src="<?php echo $section_image2 ?>" alt />
+          <div class="feaContent poppins">
+            <h4><?php echo $section_title2 ?></h4>
+            <a href="" <?php echo '/hieplight/' . $section_link2 ?>">Xem thêm<i class="flaticon-arrows-3"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 paddingLeft5px">
+        <div class="singleFeatured wow fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms">
+          <img src="<?php echo $section_image3 ?>" alt />
+          <div class="feaContent poppins">
+            <h4><?php echo $section_title3 ?></h4>
+            <a href="" <?php echo '/hieplight/' . $section_link3 ?>">Xem thêm<i class="flaticon-arrows-3"></i></a>
+          </div>
+        </div>
+
+        <div class="singleFeatured wow fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms">
+          <img src="<?php echo $section_image4 ?>" alt />
+          <div class="feaContent poppins">
+            <h4><?php echo $section_title4 ?></h4>
+            <a href="" <?php echo '/hieplight/' . $section_link4 ?>">Xem thêm<i class="flaticon-arrows-3"></i></a>
+          </div>
         </div>
       </div>
     </div>
