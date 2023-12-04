@@ -161,4 +161,30 @@ $section_link4 = get_field('link4');
   </div>
 </section>
 
+<?php
+$qcTitle = get_field('qc-title');
+$qcDescription = get_field('qc-description');
+$qcBackground = get_field('qc-background');
+$qcButtonName = get_field('qc-button-name');
+$qcButtonLink = get_field('qc-button-link');
+?>
+
+<section class="comonSection noPadding">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="callToActions text-center poppins wow fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms" style="background-image: url(<?php echo "$qcBackground"; ?>)">
+          <h2><?php echo $qcTitle ?></h2>
+          <p><?php echo $qcDescription ?></p>
+          <a href="<?php echo $qcButtonLink; ?>" class="vol_btn"><?php echo $qcButtonName; ?><i class="flaticon-arrows-3"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<?php 
+  echo do_shortcode('[recent_products limit=12]')
+?>
+
 <?php get_footer(); ?>
